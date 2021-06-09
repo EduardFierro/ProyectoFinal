@@ -72,7 +72,7 @@ public class ConsultaController {
 		service.eliminar(id);
 		return new ResponseEntity<Object>("", HttpStatus.NO_CONTENT);
 	}	
-	
+	//metodo para consultar
 	@GetMapping("/consultaPaginado/{page}/{size}")	
 	public ResponseEntity<?> consultaPaginado(@PathVariable int page, @PathVariable int size) throws ModelNotFoundException{
 		return new ResponseEntity<Object>(this.service.listarPaginado(page, size), HttpStatus.OK);
