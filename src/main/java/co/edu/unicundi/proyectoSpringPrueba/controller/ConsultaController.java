@@ -92,7 +92,7 @@ public class ConsultaController {
 		return null;
 		//return new ResponseEntity<Page<Consulta>>(this.service.findByNombreDoctorOrId(page, size, nombre, id), HttpStatus.OK);
 	}
-	
+	//metodo de consulta paginado
 	@GetMapping("/consultaAnd/{page}/{size}/{nombre}/{id}")
 	@ApiOperation(
 			value = "Retorna el nombre de la consulta con el id, Servicio paginado.",
